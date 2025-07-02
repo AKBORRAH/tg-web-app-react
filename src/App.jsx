@@ -1,4 +1,4 @@
-import { use } from "react";
+import { useEffect } from "react";
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
     return (
         <div>
             asdasdsadasASDASDASDSADAS
+            <button onClick={onClose}>Закрыть</button>
         </div>
     );
 }

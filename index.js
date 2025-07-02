@@ -22,3 +22,17 @@ bot.onText(/\/start/, async (msg) => {
         await bot.sendMessage(chatId, 'Привет! Добро пожаловать в магазин 🎁', options);
     }
 });
+
+bot.onText(/\/help/, async (msg) => {
+    const chatId = msg.chat.id
+    if(msg.text === '/help') {
+        const options = {   
+            reply_markup: {
+                inline_keyboard: [
+                    [{text: "Help", callback_data: '/'}]
+                ]
+            }
+        }
+        await bot.sendMessage(chatId, 'Привет! Давай помогу', options);
+    }
+});
