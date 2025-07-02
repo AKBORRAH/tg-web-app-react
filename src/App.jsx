@@ -8,6 +8,10 @@ function App() {
     tg.close()
     }
 
+    const onBuy = () => {
+        tg.sendData('buy')
+    }
+
     useEffect(() => {
         tg.ready()
     }, [])
@@ -16,6 +20,7 @@ function App() {
         <div>
             asdasdsadasASDASDASDSADAS
             <button onClick={onClose}>Закрыть</button>
+            <button onClick={onBuy}>Купить</button>
         </div>
     );
 }

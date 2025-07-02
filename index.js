@@ -14,7 +14,7 @@ bot.onText(/\/start/, async (msg) => {
     if(msg.text === '/start') {
         const options = {   
             reply_markup: {
-                keyboard: [
+                inline_keyboard: [
                     [{text: "Buy 🎁", web_app: {url: webApp}}]
                 ]
             }
