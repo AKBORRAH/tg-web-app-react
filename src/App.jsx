@@ -18,7 +18,8 @@ function App() {
 
     return (
         <div>
-            asdasdsadasASDASDASDSADAS
+            asdasdsadasASDASDASDSADAShello world
+            <h1>Добро пожаловать в магазин!</h1>
             <button onClick={onClose}>Закрыть</button>
             <button onClick={onBuy}>Купить</button>
         </div>
